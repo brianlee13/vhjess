@@ -8,13 +8,16 @@
 /*----------------------------------------------------------------------------------------------
  global
 -----------------------------------------------------------------------------------------------*/
-h1, h2, h3, h4, h5, h6 { 
+h1 { 
     font-weight: 400;
     font-family: 'Marck Script', cursive;
     /*color: #E7F0FF;*/
     font-size: 73px;
     margin-top: 0;
- }
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Marck Script', cursive;
+}
 p
 {
     text-align: center;
@@ -106,9 +109,9 @@ header
     -webkit-border-radius: 100%;
     -moz-border-radius: 100%;
     border-radius: 100%;
-    border: 5px white dotted;
+    border: 5px white solid;
     color: white;
-    background-color: rgb(23, 67, 72);
+    background-color: transparent;
     opacity: 0.6;
 }
 #spacer1 
