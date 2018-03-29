@@ -63,3 +63,11 @@ function countdown(yr,m,d,hr,min){
         setTimeout("countdown(theyear,themonth,theday,thehour,theminute)",1000);
     }
 }
+//paste this code under the head tag or in a separate js file.
+// Wait for window load
+$(window).load(function() {
+// Animate loader off screen
+    $(".se-pre-con").fadeOut(2000, function() {
+        $(".content").fadeIn(1000);
+    });
+});

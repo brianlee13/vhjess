@@ -478,7 +478,12 @@ media query for responsive
 .iframe-container{
     position: relative;
     width: 100%;
-    padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+    padding-bottom: 80%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+}
+@media (min-width: 1024px) {
+    .iframe-container{
+        padding-bottom: 56.25%; /* Ratio 16:9 ( 100%/16*9 = 56.25% ) */
+    }
 }
 .iframe-container > *{
     display: block;
@@ -491,4 +496,19 @@ media query for responsive
     padding: 0;
     height: 100%;
     width: 100%;
+}
+/* Paste this css to your style sheet file or under head tag */
+/* This only works with JavaScript, 
+if it's not present, don't show loader */
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(/img/Heart-1.1s-200px.svg) center no-repeat #fff;
+    animation-duration: 5s;
 }
